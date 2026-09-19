@@ -1,0 +1,80 @@
+@import 'tailwindcss';
+
+/* Design tokens. Brand blue is sampled from the app icon (#2F6FDD); neutrals lean slightly blue to sit with it. */
+:root {
+  --bg: #fbfbfd;
+  --surface: #ffffff;
+  --surface-2: #f1f3f8;
+  --ink: #15171d;
+  --muted: #5a6172;
+  --line: #e2e5ee;
+  --brand: #2f6fdd;
+  --brand-ink: #ffffff;
+  --brand-soft: #e7eefc;
+  --shadow: 0 30px 80px -30px rgb(21 32 66 / 0.35), 0 12px 30px -18px rgb(21 32 66 / 0.25);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #090a0e;
+    --surface: #13151b;
+    --surface-2: #1a1d25;
+    --ink: #f3f4f8;
+    --muted: #9aa1b3;
+    --line: #262a35;
+    --brand: #5b93ff;
+    --brand-ink: #08101f;
+    --brand-soft: #14203a;
+    --shadow: 0 30px 80px -30px rgb(0 0 0 / 0.8), 0 12px 30px -18px rgb(0 0 0 / 0.7);
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-soft: var(--brand-soft);
+  --shadow-float: var(--shadow);
+  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.028em;
+  text-wrap: balance;
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+dialog::backdrop { background: rgb(5 6 10 / 0.8); backdrop-filter: blur(6px); }
