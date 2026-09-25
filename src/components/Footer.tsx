@@ -1,3 +1,4 @@
+import { ArrowUpRight } from 'lucide-react'
 import { asset, home } from '@/lib/utils'
 import { site } from '@/content/site'
 
@@ -21,6 +22,22 @@ export function Footer() {
             <a className="hover:text-ink" href={links.supportEmail ? `mailto:${links.supportEmail}` : home('#faq')}>Support</a>
           </li>
         </ul>
+      </div>
+      <div className="mx-auto max-w-6xl px-5 pb-8 sm:px-8">
+        <a
+          href="https://henrywanghongyu.github.io/henrik-imagine-ai-market/"
+          className="group flex items-center gap-4 rounded-2xl border border-line bg-surface p-4 transition-colors hover:bg-surface-2 sm:max-w-md"
+        >
+          <img src={asset('images/common/imagine-icon.webp')} alt="" width={44} height={44} className="size-11" />
+          <span className="min-w-0">
+            <span className="block text-xs font-semibold uppercase tracking-[0.12em] text-muted">Also by {site.developer}</span>
+            <span className="flex items-center gap-1 font-semibold">
+              Henrik Imagine AI
+              <ArrowUpRight className="size-4 text-muted transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden />
+            </span>
+            <span className="block text-sm text-muted">Speak an idea, get an image — AI image generation that runs entirely on your Mac.</span>
+          </span>
+        </a>
       </div>
       <p className="mx-auto max-w-6xl px-5 pb-10 text-xs leading-relaxed text-muted sm:px-8">
         © {site.year} {site.developer}. Mac and iPhone are trademarks of Apple Inc. App Store is a service mark of Apple Inc. YouTube is a trademark of Google LLC. {site.name} is not affiliated with Apple or Google.

@@ -15,7 +15,7 @@ function siteMeta(): Plugin {
     name: 'site-meta',
     transformIndexHtml: (html) => html.replaceAll('__SITE_URL__', siteUrl),
     generateBundle() {
-      const pages = ['', 'privacy/', 'imagine-privacy/']
+      const pages = ['', 'privacy/']
       this.emitFile({
         type: 'asset',
         fileName: 'sitemap.xml',
@@ -46,7 +46,6 @@ export default defineConfig({
       input: {
         main: path.resolve(import.meta.dirname, 'index.html'),
         privacy: path.resolve(import.meta.dirname, 'privacy/index.html'),
-        imaginePrivacy: path.resolve(import.meta.dirname, 'imagine-privacy/index.html'),
       },
     },
   },
