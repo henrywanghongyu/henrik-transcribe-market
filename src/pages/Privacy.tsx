@@ -36,13 +36,13 @@ const sections: { title: string; body: React.ReactNode }[] = [
     title: 'Permissions',
     body: (
       <p>
-        The apps ask for microphone access to record live speech. On iPhone, if you choose Apple’s built-in speech recognizer, the app also asks for Speech Recognition permission; it is used in on-device mode only. You can withdraw either permission at any time in system Settings.
+        The apps ask for microphone access to record live speech and voice memos. On Mac, recording your system audio or a single app’s audio also needs Screen &amp; System Audio Recording permission; the app uses it for sound only and never saves or shares your screen. On iPhone, if you choose Apple’s built-in speech recognizer, the app also asks for Speech Recognition permission; it is used in on-device mode only. You can withdraw any of these permissions at any time in System Settings.
       </p>
     ),
   },
   {
     title: 'Data on your device',
-    body: <p>Recordings, transcripts and session history are stored locally by the app. Deleting the app, or deleting a session inside it, removes that data from your device.</p>,
+    body: <p>Recordings, voice memos, transcripts and session history are stored locally by the app. Deleting the app, or deleting a session inside it, removes that data from your device. A deleted voice memo stays in Recently Deleted for 30 days, then is removed; you can also remove it permanently at once.</p>,
   },
   {
     title: 'Changes to this policy',
@@ -63,7 +63,7 @@ export function Privacy() {
     <main className="mx-auto w-full max-w-3xl px-5 py-16 sm:px-8 md:py-24">
       <a href={home()} className="text-sm text-muted hover:text-ink">← Back to {site.name}</a>
       <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl">Privacy Policy</h1>
-      <p className="mt-3 text-muted">Last updated September 19, 2026 · Applies to {site.name} for Mac and iPhone</p>
+      <p className="mt-3 text-muted">Last updated September 28, 2026 · Applies to {site.name} for Mac and iPhone</p>
       <div className="mt-12 space-y-10">
         {sections.map((s) => (
           <section key={s.title}>

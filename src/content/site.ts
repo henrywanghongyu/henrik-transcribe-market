@@ -61,6 +61,19 @@ export const macFeatures = {
     image: 'images/mac/youtube-summary.webp',
     alt: 'The YouTube Summary window with a list of summarised videos and a detailed summary.',
   },
+  voiceMemos: {
+    eyebrow: 'New · Voice Memos',
+    title: 'Record now. Transcribe when you need to.',
+    body: 'A dedicated recorder for ideas, lectures and interviews. Memos stay as audio you can replay, trim and share — and when you want the words, one click transcribes a memo on your Mac and opens the same Summary, Insights and Ask tools.',
+    points: [
+      'Record, pause and resume with a live waveform',
+      'Scrub the waveform, skip 15 s, play at 0.75× to 2×; trim with a one-click revert',
+      'Favorites, folders, search, and Recently Deleted for 30 days',
+      'Share with AirDrop, Mail or Messages; export M4A, WAV or the transcript',
+    ],
+    image: 'images/mac/voice-memos.webp',
+    alt: 'The Voice Memos window: a list of recordings, a waveform player with speed control, and Transcript, Summary, Insights and Ask tabs.',
+  },
 }
 
 export const inputs = [
@@ -68,9 +81,9 @@ export const inputs = [
     id: 'live',
     label: 'Live',
     title: 'Record and transcribe as you speak.',
-    body: 'Start the microphone and words appear instantly. Great for meetings, interviews, lectures and voice notes — with optional on-device speaker labels.',
+    body: 'Capture your microphone, your Mac’s system audio or a single app, and words appear instantly — with optional on-device speaker labels. A waveform tracks the recording, then turns into a player so you can replay any moment under the transcript.',
     image: 'images/mac/live.webp',
-    alt: 'The Live tab with a microphone recording control.',
+    alt: 'The Live tab with System Audio and Choose App sources, a transcript, and a waveform player under it.',
   },
   {
     id: 'upload',
@@ -142,6 +155,7 @@ export const comparison: { feature: string; mac: boolean | string; iphone: boole
   { feature: 'Speaker diarization', mac: true, iphone: false },
   { feature: 'AI Summary & Talk to Transcript', mac: true, iphone: false },
   { feature: 'YouTube Summary & chapters', mac: true, iphone: false },
+  { feature: 'Voice Memos (record, trim, share, transcribe)', mac: true, iphone: false },
   { feature: 'Batch, Watch Folders, Live Captions, Podcast', mac: true, iphone: false },
   { feature: 'SRT & VTT subtitle export', mac: true, iphone: false },
   { feature: 'Whisper model manager', mac: true, iphone: false },
@@ -217,6 +231,14 @@ export const faqs = [
   {
     q: 'Can I transcribe a YouTube video?',
     a: 'On Mac, yes — paste the link and the app downloads the audio and transcribes it, or produces a full AI summary with chapters. On iPhone, web-link transcription accepts direct links to WAV audio files.',
+  },
+  {
+    q: 'What is Voice Memos, and how is it different from a live transcription?',
+    a: 'Voice Memos (Mac, ⇧⌘M) keeps recordings as audio first: record from your microphone, then replay, trim, organise in folders and share them. Nothing is transcribed until you ask — then the memo gets an on-device transcript, summary, insights and a Q&A assistant, and also appears in Sessions. Recordings never leave your Mac. Voice Memos is included with any subscription or the Lifetime license.',
+  },
+  {
+    q: 'Why does recording system or app audio ask for Screen & System Audio Recording?',
+    a: 'macOS only lets apps capture other apps’ sound through that permission. Henrik Transcribe uses it for sound only and never saves or shares your screen. If recording fails, open System Settings › Privacy & Security › Screen & System Audio Recording, turn on Henrik Transcribe, and restart the app; the app shows these steps with a button that opens the right page. Microphone recording doesn’t need this permission.',
   },
   {
     q: 'What do I need to run it?',

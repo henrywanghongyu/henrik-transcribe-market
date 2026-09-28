@@ -21,7 +21,7 @@ export function Hero() {
             Private transcription for Mac and iPhone.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted sm:text-xl">
-            Whisper AI that runs entirely on your device. Record live, transcribe files and links, and on Mac summarize with a local AI — no cloud, no uploads, no ads.
+            Whisper AI that runs entirely on your device. Record live, transcribe files and links, and on Mac keep Voice Memos and summarize with a local AI — no cloud, no uploads, no ads.
           </p>
           <StoreButtons className="mt-9 justify-center" />
           <p className="mt-5 inline-flex items-center gap-2 text-sm text-muted">

@@ -85,6 +85,7 @@ export function MacSection() {
         <FeatureRow feature={macFeatures.summary} />
         <FeatureRow feature={macFeatures.speakers} reverse />
         <FeatureRow feature={macFeatures.youtube} />
+        <FeatureRow feature={macFeatures.voiceMemos} reverse />
       </div>
 
       <div className="mt-24 md:mt-32">
