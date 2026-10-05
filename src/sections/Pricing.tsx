@@ -20,6 +20,7 @@ export function Pricing() {
                 className={cn(
                   'relative flex h-full flex-col rounded-3xl border bg-surface p-7',
                   p.highlight ? 'border-brand ring-2 ring-brand' : 'border-line',
+                  p.free && 'border-brand/40 bg-brand-soft',
                 )}
               >
                 {p.badge && (

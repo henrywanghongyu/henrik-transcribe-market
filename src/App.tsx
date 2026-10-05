@@ -9,6 +9,7 @@ import { Videos } from '@/sections/Videos'
 import { Pricing } from '@/sections/Pricing'
 import { Faq } from '@/sections/Faq'
 import { Download } from '@/sections/Download'
+import { FreeBanner } from '@/components/FreeBanner'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Hero />
         <Trust />
         <MacSection />
+        <FreeBanner />
         <IphoneSection />
         <Compare />
         <Videos />

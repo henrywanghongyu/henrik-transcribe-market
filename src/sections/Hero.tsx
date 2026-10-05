@@ -14,17 +14,14 @@ export function Hero() {
       />
       <div className="mx-auto max-w-6xl px-5 pb-16 pt-16 sm:px-8 md:pb-24 md:pt-24">
         <Reveal className="mx-auto max-w-3xl text-center">
-          {/* The headline offer: live recording costs nothing, on both apps, with no time limit. */}
-          <p className="mx-auto inline-flex items-center gap-2.5 rounded-full border border-brand/30 bg-brand-soft py-1.5 pl-1.5 pr-4 text-sm font-semibold text-brand sm:text-base">
-            <span className="grid size-7 place-items-center rounded-full bg-brand text-brand-ink" aria-hidden>
-              <Mic className="size-4" />
-            </span>
-            Live recording is free — forever
-            <span className="hidden font-medium text-brand/80 sm:inline">· Mac &amp; iPhone</span>
-          </p>
-          <h1 className="mt-6 text-5xl font-semibold leading-[1.03] sm:text-6xl md:text-7xl">
+          <h1 className="text-5xl font-semibold leading-[1.03] sm:text-6xl md:text-7xl">
             Private transcription for Mac and iPhone.
           </h1>
+          {/* The headline offer: live recording costs nothing, on both apps, with no time limit. */}
+          <p className="mx-auto mt-6 inline-flex items-center gap-3 rounded-2xl bg-brand px-5 py-3 text-xl font-semibold text-brand-ink shadow-float sm:text-2xl md:text-3xl">
+            <Mic className="size-6 shrink-0 md:size-7" aria-hidden />
+            Live recording is free. Forever.
+          </p>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted sm:text-xl">
             Whisper AI that runs entirely on your device. Record live, transcribe files and links, and on Mac keep Voice Memos and summarize with a local AI — no cloud, no uploads, no ads.
           </p>

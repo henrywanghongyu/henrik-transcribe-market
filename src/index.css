@@ -47,7 +47,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 7.5rem; /* sticky header: offer bar + nav */
   -webkit-text-size-adjust: 100%;
 }
 

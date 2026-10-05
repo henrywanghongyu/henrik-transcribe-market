@@ -203,7 +203,7 @@ export const iphoneFeatures = [
 
 /** true = included, false = not available, string = detail */
 export const comparison: { feature: string; mac: boolean | string; iphone: boolean | string }[] = [
-  { feature: 'Live microphone transcription', mac: 'Free', iphone: 'Free forever' },
+  { feature: 'Live microphone transcription', mac: 'Free forever', iphone: 'Free forever' },
   { feature: 'Audio & video files', mac: '50+ formats', iphone: 'WAV files' },
   { feature: 'Web links', mac: 'YouTube, SVT, podcasts & more', iphone: 'Direct WAV links' },
   { feature: 'Languages', mac: '99+', iphone: '30+' },
@@ -226,10 +226,11 @@ export const plans = [
     name: 'Free',
     price: '$0',
     cadence: 'forever',
-    blurb: 'Live microphone transcription — unlimited, on both apps.',
-    perks: ['Unlimited live recording', 'Every supported language', 'No ads, ever'],
+    blurb: 'Live microphone transcription — unlimited, on both apps. No subscription, no sign-up.',
+    perks: ['Unlimited live recording', 'Every supported language', 'Mac and iPhone', 'No ads, ever'],
     highlight: false,
-    badge: undefined as string | undefined,
+    free: true,
+    badge: 'Free forever' as string | undefined,
   },
   {
     name: 'Monthly',
