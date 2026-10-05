@@ -32,18 +32,18 @@ export function Hero() {
         <Reveal delay={0.1} className="relative mx-auto mt-14 max-w-5xl md:mt-20">
           <Screenshot
             src="images/mac/summary.webp"
-            alt="Henrik Transcribe on Mac: a transcript with an AI summary and a Talk to Transcript chat."
-            width={1280}
-            height={800}
+            alt="Henrik Transcribe on Mac: a transcript with speaker labels and a bilingual AI summary."
+            width={1600}
+            height={857}
             frame="mac"
             priority
           />
           <div className="absolute -bottom-10 right-2 w-[28%] max-w-[210px] sm:right-6 md:-bottom-14 md:right-[-2%]">
             <Screenshot
               src="images/iphone/transcribe.webp"
-              alt="Henrik Transcribe on iPhone with Record, File and Web tabs."
+              alt="Henrik Transcribe on iPhone, ready to record, with Record, File and Web Link tabs."
               width={750}
-              height={1623}
+              height={1626}
               frame="phone"
               priority
             />

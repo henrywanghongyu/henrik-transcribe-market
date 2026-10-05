@@ -5,7 +5,7 @@ import { Section, SectionHeading } from '@/components/Section'
 import { Reveal } from '@/components/Reveal'
 import { Screenshot } from '@/components/Screenshot'
 import { cn } from '@/lib/utils'
-import { inputs, macFeatures, workflows } from '@/content/site'
+import { everyday, inputs, macFeatures, workflows } from '@/content/site'
 
 type Feature = (typeof macFeatures)[keyof typeof macFeatures]
 
@@ -25,7 +25,7 @@ function FeatureRow({ feature, reverse }: { feature: Feature; reverse?: boolean 
         </ul>
       </Reveal>
       <Reveal delay={0.08} className={cn('lg:col-span-7', reverse && 'lg:order-1')}>
-        <Screenshot src={feature.image} alt={feature.alt} width={1280} height={800} frame="mac" />
+        <Screenshot src={feature.image} alt={feature.alt} width={feature.width} height={feature.height} frame="mac" />
       </Reveal>
     </div>
   )
@@ -84,8 +84,28 @@ export function MacSection() {
       <div className="mt-20 space-y-24 md:mt-28 md:space-y-32">
         <FeatureRow feature={macFeatures.summary} />
         <FeatureRow feature={macFeatures.speakers} reverse />
-        <FeatureRow feature={macFeatures.youtube} />
-        <FeatureRow feature={macFeatures.voiceMemos} reverse />
+        <FeatureRow feature={macFeatures.liveDiarization} />
+        <FeatureRow feature={macFeatures.youtube} reverse />
+        <FeatureRow feature={macFeatures.voiceMemos} />
+      </div>
+
+      <div className="mt-24 md:mt-32">
+        <Reveal><h3 className="mb-10 text-center text-3xl font-semibold sm:text-4xl">Fits into your day.</h3></Reveal>
+        <div className="grid gap-6 sm:grid-cols-2">
+          {everyday.map((e, i) => (
+            <Reveal key={e.title} delay={(i % 2) * 0.08}>
+              <article className="flex h-full flex-col overflow-hidden rounded-3xl border border-line bg-surface">
+                <div className="p-6 sm:p-7">
+                  <h4 className="text-xl font-semibold tracking-tight">{e.title}</h4>
+                  <p className="mt-2 text-muted">{e.body}</p>
+                </div>
+                <div className="mt-auto p-3 pt-0 sm:p-4 sm:pt-0">
+                  <Screenshot src={e.image} alt={e.alt} width={e.width} height={e.height} frame="mac" className="shadow-none" />
+                </div>
+              </article>
+            </Reveal>
+          ))}
+        </div>
       </div>
 
       <div className="mt-24 md:mt-32">

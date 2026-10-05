@@ -11,15 +11,15 @@ export function IphoneSection() {
         <SectionHeading
           eyebrow="On iPhone"
           title="Transcribe on the go — completely offline."
-          body="Record live speech and watch it turn into text on your iPhone. Free forever for live recording; a license adds audio files and web links."
+          body="Record live speech and watch it turn into text on your iPhone, then keep it in step with your Mac. Free forever for live recording; a license adds audio files and web links."
         />
 
         <div className="mt-16 grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
-          <div className="grid grid-cols-3 items-start gap-3 sm:gap-6 lg:col-span-7">
+          <div className="grid grid-cols-3 items-start gap-x-3 gap-y-10 sm:gap-x-6 sm:gap-y-14 lg:col-span-7">
             {iphoneScreens.map((s, i) => (
-              <Reveal key={s.image} delay={i * 0.08} className={i === 1 ? 'mt-8 sm:mt-14' : ''}>
+              <Reveal key={s.image} delay={(i % 3) * 0.08} className={i % 3 === 1 ? 'mt-8 sm:mt-14' : ''}>
                 <figure>
-                  <Screenshot src={s.image} alt={s.alt} width={750} height={1623} frame="phone" />
+                  <Screenshot src={s.image} alt={s.alt} width={750} height={1626} frame="phone" />
                   <figcaption className="mt-4 text-center text-xs text-muted sm:text-sm">{s.caption}</figcaption>
                 </figure>
               </Reveal>

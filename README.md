@@ -35,8 +35,10 @@ Optionally add `poster: 'images/videos/<name>.webp'` (file in `public/images/vid
 
 ### Replacing screenshots
 Files live in `public/images/{mac,iphone,common}` and are referenced from `src/content/site.ts` and the hero.
-Keep the file names and the site updates itself. Sizes used: Mac 1280×800 (WebP), iPhone 750×1623 (WebP).
-Convert with any tool that writes WebP, e.g. `cwebp -q 88 in.png -o out.webp`.
+Keep the file names and the site updates itself. Mac screenshots are WebP, 1600 px wide at their
+natural height; put each one's `width`/`height` next to its `image` in `site.ts` (no layout shift).
+iPhone screenshots are 750×1626 WebP.
+Convert with any tool that writes WebP, e.g. `cwebp -q 88 -resize 1600 0 in.png -o out.webp`.
 
 ## Deploy to GitHub Pages
 
@@ -52,8 +54,8 @@ Convert with any tool that writes WebP, e.g. `cwebp -q 88 in.png -o out.webp`.
 
 ## Before you go public — checklist
 
-- [ ] Paste the real App Store URLs into `src/content/site.ts`, and swap the placeholder buttons for Apple's official badges (Apple's marketing resources — badge artwork has usage rules).
-- [ ] Re-capture the **iPhone** screenshots on a real device with real content (populated transcript, populated Sessions list). The bundled ones are early empty-state captures.
+- [ ] Paste the real App Store URLs into `src/content/site.ts` (Mac done 2026-10; iPhone once it is live), and swap the placeholder buttons for Apple's official badges (Apple's marketing resources — badge artwork has usage rules).
+- [x] Re-capture the **iPhone** screenshots on a real device (2026-10).
 - [ ] Set `site.links.supportEmail`.
 - [ ] Review `src/pages/Privacy.tsx` against your current policy before using `…/privacy/` as the App Store Privacy Policy URL.
 - [ ] Add YouTube videos when ready.

@@ -12,7 +12,7 @@ export const site = {
   /** Paste the App Store URLs here once they are live, e.g. https://apps.apple.com/app/id1234567890.
    *  Empty string = the button renders as a disabled "Coming soon" button instead of a dead link. */
   links: {
-    macAppStore: '',
+    macAppStore: 'https://apps.apple.com/app/henrik-transcribe/id6767550920',
     iosAppStore: '',
     /** Shown in the footer and FAQ. Leave empty to hide. */
     supportEmail: '',
@@ -41,17 +41,45 @@ export const macFeatures = {
     eyebrow: 'AI Summary & Talk to Transcript',
     title: 'Turn an hour of audio into a page you can act on.',
     body: 'A local AI assistant writes the summary, pulls out key points, action items and chapters, and answers follow-up questions with clickable source timestamps. Choose a length and a style — meeting, podcast, interview or lecture.',
-    points: ['Short, Standard or Detailed summaries', 'Answers cite the exact moment in the recording', 'Runs on your Mac — nothing is sent to the cloud'],
+    points: [
+      'Short, Standard or Detailed summaries',
+      'Summaries in the recording’s own language, with an English translation one click away',
+      'Answers cite the exact moment in the recording',
+      'Runs on your Mac — nothing is sent to the cloud',
+    ],
     image: 'images/mac/summary.webp',
-    alt: 'Henrik Transcribe on Mac showing a transcript, an AI summary panel and a Talk to Transcript chat.',
+    width: 1600,
+    height: 857,
+    alt: 'Henrik Transcribe on Mac: a Swedish transcript with speaker labels, and an AI summary with Swedish and English (translated) tabs.',
   },
   speakers: {
     eyebrow: 'Speaker diarization',
     title: 'Know who said what.',
     body: 'Speakers are detected and labelled automatically, each turn is timestamped, and playback follows along word by word. Rename speakers, fix a line, and export the result.',
-    points: ['Colour-coded speaker turns with per-speaker summary', 'Synchronised audio playback, word or sentence level', 'Export as TXT, DOCX, PDF, Markdown, SRT or VTT'],
+    points: [
+      'Colour-coded speaker turns with per-speaker summary',
+      'Synchronised audio playback, word or sentence level',
+      'Speakers are identified on your Mac’s GPU, with a live progress bar and Cancel',
+      'Export as TXT, DOCX, PDF, Markdown, SRT or VTT',
+    ],
     image: 'images/mac/speakers.webp',
-    alt: 'A transcript with colour-coded speaker turns and a per-speaker summary panel.',
+    width: 1600,
+    height: 861,
+    alt: 'An uploaded file transcribed with colour-coded speaker turns, word-level audio sync and a Speaker Summary panel.',
+  },
+  liveDiarization: {
+    eyebrow: 'New · Speakers for live recordings',
+    title: 'Recorded it live? Add the speakers afterwards.',
+    body: 'Live transcription is instant; full speaker identification takes a closer listen. One click runs the full Speaker Diarization Engine on a live recording’s saved audio and opens the result as a new transcript — labelled by speaker, with the original left untouched.',
+    points: [
+      'Apply Full Speaker Diarization from any saved live recording',
+      'The result is a new session; your original transcript stays as it is',
+      'Summaries, Ask and export work on the result straight away',
+    ],
+    image: 'images/mac/live-diarization.webp',
+    width: 1600,
+    height: 858,
+    alt: 'A saved live recording with the Apply Full Speaker Diarization button, a tip explaining it, and an AI summary.',
   },
   youtube: {
     eyebrow: 'YouTube Summary',
@@ -59,7 +87,9 @@ export const macFeatures = {
     body: 'Drop in a YouTube link for a full transcript, an AI summary, auto-detected chapters, key insights and a Q&A assistant for the video — all processed locally.',
     points: ['Summary, Insights, Chapters, Transcript and Ask tabs', 'Also works with Vimeo, SVT Play, podcasts and RSS, or direct MP3/MP4 links', 'Downloads the audio and transcribes it offline'],
     image: 'images/mac/youtube-summary.webp',
-    alt: 'The YouTube Summary window with a list of summarised videos and a detailed summary.',
+    width: 1600,
+    height: 857,
+    alt: 'The YouTube Summary window with a list of summarised videos and a detailed meeting-style summary.',
   },
   voiceMemos: {
     eyebrow: 'New · Voice Memos',
@@ -72,6 +102,8 @@ export const macFeatures = {
       'Share with AirDrop, Mail or Messages; export M4A, WAV or the transcript',
     ],
     image: 'images/mac/voice-memos.webp',
+    width: 1600,
+    height: 889,
     alt: 'The Voice Memos window: a list of recordings, a waveform player with speed control, and Transcript, Summary, Insights and Ask tabs.',
   },
 }
@@ -130,10 +162,32 @@ export const workflows = [
   },
 ]
 
+export const everyday = [
+  {
+    title: 'Meetings, menu bar & Shortcuts',
+    body: 'When Zoom, Teams, FaceTime, Slack or a Google Meet tab starts using the microphone, a notification offers to record the call. Start and stop from the menu bar, and drive the app from Shortcuts, Raycast or Alfred with links.',
+    image: 'images/mac/settings.webp',
+    width: 1600,
+    height: 960,
+    alt: 'Settings: recording mode (microphone, system audio or both), meeting detection, and Show in Menu Bar with Shortcuts & Automation.',
+  },
+  {
+    title: 'Your models, your choice',
+    body: 'Pick the Whisper model that suits you — from Tiny to Large v3 Turbo — and the models for speaker identification and AI summaries. Download what you need, remove what you don’t; everything runs on your Mac.',
+    image: 'images/mac/models.webp',
+    width: 1600,
+    height: 1051,
+    alt: 'Settings › Models: Whisper models, the Whisper models for full speaker diarization with the engine status, and the local AI models.',
+  },
+]
+
 export const iphoneScreens = [
-  { image: 'images/iphone/transcribe.webp', alt: 'Transcribe screen on iPhone with Record, File and Web tabs.', caption: 'Record, File or Web' },
-  { image: 'images/iphone/sessions.webp', alt: 'My Sessions screen on iPhone listing saved transcripts.', caption: 'Every session, saved' },
-  { image: 'images/iphone/license.webp', alt: 'Plans screen on iPhone showing Monthly and Yearly options.', caption: 'Simple plans' },
+  { image: 'images/iphone/transcribe.webp', alt: 'Record screen on iPhone with Record, File and Web Link tabs and a Start Recording button.', caption: 'Record, File or Web Link' },
+  { image: 'images/iphone/sessions.webp', alt: 'Transcripts screen on iPhone with search and a saved recording.', caption: 'Every transcript, searchable' },
+  { image: 'images/iphone/sync.webp', alt: 'Settings › Sync with Mac on iPhone: iCloud Drive, Google Drive, Dropbox, OneDrive or another folder.', caption: 'Sync with your Mac' },
+  { image: 'images/iphone/settings.webp', alt: 'Settings on iPhone: appearance, language, microphone and the live transcription engine.', caption: 'Whisper or Apple Speech' },
+  { image: 'images/iphone/license.webp', alt: 'Plans on iPhone: the free plan and a Monthly plan with a 1-month free trial.', caption: 'Live recording is free' },
+  { image: 'images/iphone/plans.webp', alt: 'Plans on iPhone: Monthly, Yearly and a one-time Lifetime License.', caption: 'Monthly, Yearly or Lifetime' },
 ]
 
 export const iphoneFeatures = [
@@ -142,7 +196,8 @@ export const iphoneFeatures = [
   { title: 'Audio file transcription', body: 'Transcribe pre-recorded WAV files on-device.' },
   { title: 'Web link transcription', body: 'Paste a direct link to a WAV file; the app downloads and transcribes it.' },
   { title: '30+ languages', body: 'With an English-optimised model for extra accuracy.' },
-  { title: 'History & sharing', body: 'Transcripts save automatically with editable titles. Copy, or share via the iOS Share Sheet.' },
+  { title: 'History & sharing', body: 'Transcripts save automatically with editable titles. Search them, copy, or share via the iOS Share Sheet.' },
+  { title: 'Sync with your Mac', body: 'Keep iPhone and Mac transcripts in step through a folder in your own iCloud Drive, Google Drive, Dropbox or OneDrive — no account with us, no server of ours.' },
   { title: 'Light, Dark or Automatic', body: 'Follows your iPhone’s appearance, or pick one.' },
 ]
 
@@ -160,6 +215,8 @@ export const comparison: { feature: string; mac: boolean | string; iphone: boole
   { feature: 'SRT & VTT subtitle export', mac: true, iphone: false },
   { feature: 'Whisper model manager', mac: true, iphone: false },
   { feature: 'Session history, copy & share', mac: true, iphone: true },
+  { feature: 'Sync transcripts via your own cloud drive', mac: true, iphone: true },
+  { feature: 'Meeting detection, menu bar & Shortcuts', mac: true, iphone: false },
   { feature: '100% on-device processing', mac: true, iphone: true },
   { feature: 'Requires', mac: 'macOS 12+, Apple Silicon', iphone: 'iOS 16.4+, iPhone' },
 ]
@@ -222,7 +279,7 @@ export const faqs = [
   },
   {
     q: 'Do my transcripts sync between Mac and iPhone?',
-    a: 'Not currently. Each app keeps its own sessions on the device. Copy or share a transcript to move it between them.',
+    a: 'Yes, through a folder in your own cloud drive — iCloud Drive, Google Drive, Dropbox, OneDrive or any folder you choose. Pick the same folder in Settings on your Mac and your iPhone. Titles, text and favorites sync; audio stays on the device that recorded it. There is no account with us and no server of ours: your cloud drive’s own app moves the files.',
   },
   {
     q: 'Which languages are supported?',
