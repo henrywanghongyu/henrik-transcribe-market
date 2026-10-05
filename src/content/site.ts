@@ -186,12 +186,12 @@ export const iphoneScreens = [
   { image: 'images/iphone/sessions.webp', alt: 'Transcripts screen on iPhone with search and a saved recording.', caption: 'Every transcript, searchable' },
   { image: 'images/iphone/sync.webp', alt: 'Settings › Sync with Mac on iPhone: iCloud Drive, Google Drive, Dropbox, OneDrive or another folder.', caption: 'Sync with your Mac' },
   { image: 'images/iphone/settings.webp', alt: 'Settings on iPhone: appearance, language, microphone and the live transcription engine.', caption: 'Whisper or Apple Speech' },
-  { image: 'images/iphone/license.webp', alt: 'Plans on iPhone: the free plan and a Monthly plan with a 1-month free trial.', caption: 'Live recording is free' },
+  { image: 'images/iphone/license.webp', alt: 'Plans on iPhone: the free plan and a Monthly plan with a 1-month free trial.', caption: 'Live recording in English is free' },
   { image: 'images/iphone/plans.webp', alt: 'Plans on iPhone: Monthly, Yearly and a one-time Lifetime License.', caption: 'Monthly, Yearly or Lifetime' },
 ]
 
 export const iphoneFeatures = [
-  { title: 'Live recording — free forever', body: 'Unlimited length, no subscription required, ever.' },
+  { title: 'Live recording in English — free forever', body: 'Unlimited length, no subscription required, ever.' },
   { title: 'Choose your engine', body: 'Offline Whisper AI, or Apple’s built-in on-device speech recognizer. Both run entirely on your iPhone.' },
   { title: 'Audio file transcription', body: 'Transcribe pre-recorded WAV files on-device.' },
   { title: 'Web link transcription', body: 'Paste a direct link to a WAV file; the app downloads and transcribes it.' },
@@ -226,8 +226,8 @@ export const plans = [
     name: 'Free',
     price: '$0',
     cadence: 'forever',
-    blurb: 'Live microphone transcription — unlimited, on both apps. No subscription, no sign-up.',
-    perks: ['Unlimited live recording', 'Every supported language', 'Mac and iPhone', 'No ads, ever'],
+    blurb: 'Live microphone transcription in English — unlimited, on both apps. No subscription, no sign-up.',
+    perks: ['Unlimited live recording in English', 'Mac and iPhone', 'No ads, ever'],
     highlight: false,
     free: true,
     badge: 'Free forever' as string | undefined,

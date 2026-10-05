@@ -3,7 +3,7 @@ import { Reveal } from '@/components/Reveal'
 
 const items = [
   { Icon: ShieldCheck, title: '100% on-device', body: 'Audio never uploaded' },
-  { Icon: Gift, title: 'Live recording is free', body: 'Unlimited, forever' },
+  { Icon: Gift, title: 'Live recording in English is free', body: 'Unlimited, forever · Mac & iPhone' },
   { Icon: Cpu, title: 'Apple Silicon fast', body: 'Neural Engine / Core ML' },
   { Icon: Languages, title: '99+ languages', body: '30+ on iPhone' },
 ]

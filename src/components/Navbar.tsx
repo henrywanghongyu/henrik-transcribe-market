@@ -24,7 +24,7 @@ export function Navbar() {
       >
         <Mic className="size-4 shrink-0" aria-hidden />
         <span>
-          Live recording is free — forever<span className="hidden sm:inline">, on Mac and iPhone. No subscription, no time limit.</span>
+          Live recording in English is free — forever<span className="hidden sm:inline"> · Mac &amp; iPhone. No subscription, no time limit.</span>
         </span>
         <span className="inline-flex items-center gap-1 underline decoration-brand-ink/50 underline-offset-4 group-hover:decoration-brand-ink">
           Download free <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" aria-hidden />

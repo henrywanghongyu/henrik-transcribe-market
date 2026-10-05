@@ -12,10 +12,11 @@ export function FreeBanner() {
             <Mic className="size-7" />
           </span>
           <h2 id="free-banner-title" className="mx-auto mt-6 max-w-3xl text-4xl font-semibold leading-[1.05] sm:text-5xl md:text-6xl">
-            Live recording is free. Forever.
+            Live recording in English is free — forever.
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg opacity-90 sm:text-xl">
-            Unlimited length, every language, on your Mac and your iPhone — no subscription, no sign-up, no ads.
+          <p className="mx-auto mt-4 text-xl font-semibold opacity-95 sm:text-2xl">Mac &amp; iPhone</p>
+          <p className="mx-auto mt-4 max-w-2xl text-lg opacity-90 sm:text-xl">
+            Unlimited length, on your Mac and your iPhone — no subscription, no sign-up, no ads.
           </p>
           {/* Badges are ink-on-light elsewhere; on the brand ground they read better light. */}
           <div className="mt-9 flex justify-center [&_a]:bg-bg [&_a]:text-ink">

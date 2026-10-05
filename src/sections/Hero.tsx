@@ -18,9 +18,10 @@ export function Hero() {
             Private transcription for Mac and iPhone.
           </h1>
           {/* The headline offer: live recording costs nothing, on both apps, with no time limit. */}
-          <p className="mx-auto mt-6 inline-flex items-center gap-3 rounded-2xl bg-brand px-5 py-3 text-xl font-semibold text-brand-ink shadow-float sm:text-2xl md:text-3xl">
+          <p className="mx-auto mt-6 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 rounded-2xl bg-brand px-5 py-3 text-xl font-semibold text-brand-ink shadow-float sm:text-2xl md:text-3xl">
             <Mic className="size-6 shrink-0 md:size-7" aria-hidden />
-            Live recording is free. Forever.
+            <span>Live recording in English is free — forever</span>
+            <span className="font-medium opacity-85">· Mac &amp; iPhone</span>
           </p>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted sm:text-xl">
             Whisper AI that runs entirely on your device. Record live, transcribe files and links, and on Mac keep Voice Memos and summarize with a local AI — no cloud, no uploads, no ads.
@@ -31,7 +32,7 @@ export function Hero() {
               <Check className="size-4 text-brand" aria-hidden /> Free to download
             </li>
             <li className="inline-flex items-center gap-1.5">
-              <Check className="size-4 text-brand" aria-hidden /> Unlimited live transcription — no subscription
+              <Check className="size-4 text-brand" aria-hidden /> Unlimited live transcription in English — no subscription
             </li>
             <li className="inline-flex items-center gap-1.5">
               <Lock className="size-4" aria-hidden /> Your audio never leaves your device
