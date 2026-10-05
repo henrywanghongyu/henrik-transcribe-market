@@ -11,6 +11,7 @@ const links = [
   ...(videos.length > 0 ? [{ href: '#videos', label: 'Videos' }] : []),
   { href: '#pricing', label: 'Pricing' },
   { href: '#faq', label: 'FAQ' },
+  { href: 'support/', label: 'Help' },
 ]
 
 export function Navbar() {

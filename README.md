@@ -40,6 +40,23 @@ natural height; put each one's `width`/`height` next to its `image` in `site.ts`
 iPhone screenshots are 750×1626 WebP.
 Convert with any tool that writes WebP, e.g. `cwebp -q 88 -resize 1600 0 in.png -o out.webp`.
 
+## Help & Feedback page and feedback form
+
+`support/index.html` → `src/pages/Support.tsx`. It is the App Store **Support URL**
+(`…/support/`) and is linked from the nav, the footer and the apps' Help & Feedback items.
+Email links go to `site.links.supportEmail`.
+
+### Adding a feedback form (Tally, free, no server needed)
+GitHub Pages only serves static files, so the form itself lives at Tally; the page embeds it.
+1. Sign in at <https://tally.so> (free plan), **Create form**, add your questions
+   (e.g. Which app? · How satisfied are you? · What should we improve? · Email if you want a reply).
+2. **Publish**, copy the share link (`https://tally.so/r/<id>`).
+3. Paste it into `site.links.feedbackForm` in `src/content/site.ts`, commit and push — the
+   "Quick feedback form" block appears on the Help & Feedback page.
+4. Responses: Tally dashboard › your form › **Submissions** (table, filters, CSV export).
+   Settings › **Notifications** emails you each new response; Integrations can forward to
+   Google Sheets or Notion.
+
 ## Deploy to GitHub Pages
 
 1. Push `main` to `henrywanghongyu/henrik-transcribe-market`.

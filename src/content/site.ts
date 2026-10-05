@@ -14,8 +14,15 @@ export const site = {
   links: {
     macAppStore: 'https://apps.apple.com/app/henrik-transcribe/id6767550920',
     iosAppStore: '',
-    /** Shown in the footer and FAQ. Leave empty to hide. */
-    supportEmail: '',
+    /** Shown in the footer, FAQ and the Help & Feedback page. Leave empty to hide. */
+    supportEmail: 'henry.wang.sweden@gmail.com',
+    /** Help & Feedback page (support/), also the App Store "App Support" URL. */
+    support: 'support/',
+    /** A Tally form's share link, e.g. https://tally.so/r/abc123. Empty = the form block on the
+     *  Help & Feedback page is hidden (email feedback still works). See README › Feedback form. */
+    feedbackForm: '',
+    /** Opens the App Store's "Write a Review" sheet for the app (Mac and iPhone share one listing). */
+    writeReview: 'https://apps.apple.com/app/id6767550920?action=write-review',
     terms: 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/',
     /** On-site privacy page. Point at the existing Google Doc instead if you prefer. */
     privacy: 'privacy/',
@@ -301,6 +308,10 @@ export const faqs = [
   {
     q: 'What do I need to run it?',
     a: 'Mac: macOS 12 or later on an Apple Silicon Mac (M1 or newer). iPhone: iOS 16.4 or later.',
+  },
+  {
+    q: 'How do I report a problem or send feedback?',
+    a: 'On Mac, choose Help › Send Feedback (it fills in your app and macOS versions), or Help › Show Diagnostic Log to find a log to attach. On iPhone, open Settings › Help & Feedback. You can also use the Help & Feedback page on this site, or email the developer directly. Every message is read.',
   },
   {
     q: 'How do I cancel a subscription?',

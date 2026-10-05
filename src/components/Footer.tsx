@@ -19,7 +19,7 @@ export function Footer() {
           <li><a className="hover:text-ink" href={privacy}>Privacy Policy</a></li>
           <li><a className="hover:text-ink" href={links.terms} target="_blank" rel="noopener">Terms of Use (EULA)</a></li>
           <li>
-            <a className="hover:text-ink" href={links.supportEmail ? `mailto:${links.supportEmail}` : home('#faq')}>Support</a>
+            <a className="hover:text-ink" href={home(links.support)}>Help &amp; Feedback</a>
           </li>
         </ul>
       </div>
