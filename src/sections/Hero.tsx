@@ -1,4 +1,4 @@
-import { Lock, Sparkles } from 'lucide-react'
+import { Check, Lock, Mic } from 'lucide-react'
 import { StoreButtons } from '@/components/StoreButtons'
 import { Screenshot } from '@/components/Screenshot'
 import { Reveal } from '@/components/Reveal'
@@ -14,8 +14,13 @@ export function Hero() {
       />
       <div className="mx-auto max-w-6xl px-5 pb-16 pt-16 sm:px-8 md:pb-24 md:pt-24">
         <Reveal className="mx-auto max-w-3xl text-center">
-          <p className="mx-auto inline-flex items-center gap-2 rounded-full border border-line bg-surface px-4 py-1.5 text-sm text-muted">
-            <Sparkles className="size-4 text-brand" aria-hidden /> Live recording is free — forever
+          {/* The headline offer: live recording costs nothing, on both apps, with no time limit. */}
+          <p className="mx-auto inline-flex items-center gap-2.5 rounded-full border border-brand/30 bg-brand-soft py-1.5 pl-1.5 pr-4 text-sm font-semibold text-brand sm:text-base">
+            <span className="grid size-7 place-items-center rounded-full bg-brand text-brand-ink" aria-hidden>
+              <Mic className="size-4" />
+            </span>
+            Live recording is free — forever
+            <span className="hidden font-medium text-brand/80 sm:inline">· Mac &amp; iPhone</span>
           </p>
           <h1 className="mt-6 text-5xl font-semibold leading-[1.03] sm:text-6xl md:text-7xl">
             Private transcription for Mac and iPhone.
@@ -24,9 +29,17 @@ export function Hero() {
             Whisper AI that runs entirely on your device. Record live, transcribe files and links, and on Mac keep Voice Memos and summarize with a local AI — no cloud, no uploads, no ads.
           </p>
           <StoreButtons className="mt-9 justify-center" />
-          <p className="mt-5 inline-flex items-center gap-2 text-sm text-muted">
-            <Lock className="size-4" aria-hidden /> Your audio never leaves your device
-          </p>
+          <ul className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-muted">
+            <li className="inline-flex items-center gap-1.5">
+              <Check className="size-4 text-brand" aria-hidden /> Free to download
+            </li>
+            <li className="inline-flex items-center gap-1.5">
+              <Check className="size-4 text-brand" aria-hidden /> Unlimited live transcription — no subscription
+            </li>
+            <li className="inline-flex items-center gap-1.5">
+              <Lock className="size-4" aria-hidden /> Your audio never leaves your device
+            </li>
+          </ul>
         </Reveal>
 
         <Reveal delay={0.1} className="relative mx-auto mt-14 max-w-5xl md:mt-20">
