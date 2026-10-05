@@ -91,6 +91,10 @@ export function Support() {
             loading="lazy"
             className="mt-6 h-[640px] w-full rounded-2xl border border-line bg-surface"
           />
+          <p className="mt-3 text-sm text-muted">
+            Form not showing?{' '}
+            <a className="text-brand underline-offset-4 hover:underline" href={links.feedbackForm} target="_blank" rel="noopener">Open it in a new tab</a>.
+          </p>
         </section>
       )}
 

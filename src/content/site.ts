@@ -20,7 +20,7 @@ export const site = {
     support: 'support/',
     /** A Tally form's share link, e.g. https://tally.so/r/abc123. Empty = the form block on the
      *  Help & Feedback page is hidden (email feedback still works). See README › Feedback form. */
-    feedbackForm: '',
+    feedbackForm: 'https://tally.so/r/RG7z4p',
     /** Opens the App Store's "Write a Review" sheet for the app (Mac and iPhone share one listing). */
     writeReview: 'https://apps.apple.com/app/id6767550920?action=write-review',
     terms: 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/',
