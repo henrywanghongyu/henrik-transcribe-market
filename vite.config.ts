@@ -31,7 +31,7 @@ function siteMeta(): Plugin {
       this.emitFile({
         type: 'asset',
         fileName: '404.html',
-        source: `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found – Henrik Transcribe</title><meta name="robots" content="noindex"><meta http-equiv="refresh" content="4;url=${base}"><style>body{margin:0;min-height:100vh;display:grid;place-items:center;font:17px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif;background:#fbfbfd;color:#1d1d1f}main{text-align:center;padding:24px}a{color:#2f6fdd}@media(prefers-color-scheme:dark){body{background:#0b0c10;color:#f5f5f7}a{color:#6ea2ff}}</style></head><body><main><h1>That page doesn’t exist.</h1><p>Taking you back to <a href="${base}">Henrik Transcribe</a>…</p></main></body></html>`,
+        source: `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found – AI Transcribe</title><meta name="robots" content="noindex"><meta http-equiv="refresh" content="4;url=${base}"><style>body{margin:0;min-height:100vh;display:grid;place-items:center;font:17px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif;background:#fbfbfd;color:#1d1d1f}main{text-align:center;padding:24px}a{color:#2f6fdd}@media(prefers-color-scheme:dark){body{background:#0b0c10;color:#f5f5f7}a{color:#6ea2ff}}</style></head><body><main><h1>That page doesn’t exist.</h1><p>Taking you back to <a href="${base}">AI Transcribe</a>…</p></main></body></html>`,
       })
     },
   }

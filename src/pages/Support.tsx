@@ -16,7 +16,7 @@ const problemTemplate = [
   'Steps to reproduce:',
   '1. ',
   '',
-  'App: Henrik Transcribe for Mac / iPhone (version: )',
+  'App: AI Transcribe for Mac / iPhone (version: )',
   'macOS / iOS version: ',
 ].join('\n')
 
@@ -31,13 +31,13 @@ const cards = [
     Icon: Mail,
     title: 'Send feedback',
     body: 'Ideas, wishes, things you love or would change — it all goes straight to the developer and is read personally.',
-    action: { label: 'Email feedback', href: mail('Henrik Transcribe feedback') },
+    action: { label: 'Email feedback', href: mail('AI Transcribe feedback') },
   },
   {
     Icon: Bug,
     title: 'Report a problem',
     body: 'Tell us what happened and how to make it happen again. On Mac, Help › Send Feedback fills in your app and macOS versions for you, and Help › Show Diagnostic Log finds the log to attach.',
-    action: { label: 'Report a problem', href: mail('Henrik Transcribe problem report', problemTemplate) },
+    action: { label: 'Report a problem', href: mail('AI Transcribe problem report', problemTemplate) },
   },
   {
     Icon: Star,
@@ -87,7 +87,7 @@ export function Support() {
           <p className="mt-2 text-muted">No email needed — answer a few questions and press Submit.</p>
           <iframe
             src={form}
-            title="Henrik Transcribe feedback form"
+            title="AI Transcribe feedback form"
             loading="lazy"
             className="mt-6 h-[640px] w-full rounded-2xl border border-line bg-surface"
           />

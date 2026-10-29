@@ -4,7 +4,9 @@
  */
 
 export const site = {
-  name: 'Henrik Transcribe',
+  name: 'AI Transcribe',
+  /** The App Store name (formerly AI Transcribe, renamed October 2026). */
+  fullName: 'AI Transcribe – Voice Insight',
   developer: 'Henry Wang',
   year: 2026,
   tagline: 'Private AI transcription for your Mac and iPhone.',
@@ -12,8 +14,9 @@ export const site = {
   /** Paste the App Store URLs here once they are live, e.g. https://apps.apple.com/app/id1234567890.
    *  Empty string = the button renders as a disabled "Coming soon" button instead of a dead link. */
   links: {
-    macAppStore: 'https://apps.apple.com/app/henrik-transcribe/id6767550920',
-    iosAppStore: '',
+    /** Mac and iPhone share one App Store listing (Universal Purchase). */
+    macAppStore: 'https://apps.apple.com/app/ai-transcribe-voice-insight/id6767550920',
+    iosAppStore: 'https://apps.apple.com/app/ai-transcribe-voice-insight/id6767550920',
     /** Shown in the footer, FAQ and the Help & Feedback page. Leave empty to hide. */
     supportEmail: 'henry.wang.sweden@gmail.com',
     /** Help & Feedback page (support/), also the App Store "App Support" URL. */
@@ -57,7 +60,7 @@ export const macFeatures = {
     image: 'images/mac/summary.webp',
     width: 1600,
     height: 857,
-    alt: 'Henrik Transcribe on Mac: a Swedish transcript with speaker labels, and an AI summary with Swedish and English (translated) tabs.',
+    alt: 'AI Transcribe on Mac: a Swedish transcript with speaker labels, and an AI summary with Swedish and English (translated) tabs.',
   },
   speakers: {
     eyebrow: 'Speaker diarization',
@@ -225,7 +228,7 @@ export const comparison: { feature: string; mac: boolean | string; iphone: boole
   { feature: 'Sync transcripts via your own cloud drive', mac: true, iphone: true },
   { feature: 'Meeting detection, menu bar & Shortcuts', mac: true, iphone: false },
   { feature: '100% on-device processing', mac: true, iphone: true },
-  { feature: 'Requires', mac: 'macOS 12+, Apple Silicon', iphone: 'iOS 16.4+, iPhone' },
+  { feature: 'Requires', mac: 'macOS 12+, Apple Silicon', iphone: 'iOS 18+, iPhone and iPad' },
 ]
 
 export const plans = [
@@ -282,8 +285,12 @@ export const faqs = [
     a: 'Yes. Mac and iPhone share a single App Store purchase, so a subscription or Lifetime license unlocks both. Sign in with the same Apple ID on each device and use Restore Purchases if it doesn’t appear straight away.',
   },
   {
+    q: 'Is this the app that used to be called Henrik Transcribe?',
+    a: 'Yes. Henrik Transcribe was renamed AI Transcribe – Voice Insight in October 2026. It is the same app from the same developer: your purchase, your transcripts, your settings and any models you downloaded all carry over with the update, and nothing needs to be set up again.',
+  },
+  {
     q: 'Do I need to create an account?',
-    a: 'No. There is no Henrik Transcribe account. Purchases are handled by Apple through your Apple ID.',
+    a: 'No. There is no AI Transcribe account. Purchases are handled by Apple through your Apple ID.',
   },
   {
     q: 'Do my transcripts sync between Mac and iPhone?',
@@ -303,11 +310,11 @@ export const faqs = [
   },
   {
     q: 'Why does recording system or app audio ask for Screen & System Audio Recording?',
-    a: 'macOS only lets apps capture other apps’ sound through that permission. Henrik Transcribe uses it for sound only and never saves or shares your screen. If recording fails, open System Settings › Privacy & Security › Screen & System Audio Recording, turn on Henrik Transcribe, and restart the app; the app shows these steps with a button that opens the right page. Microphone recording doesn’t need this permission.',
+    a: 'macOS only lets apps capture other apps’ sound through that permission. AI Transcribe uses it for sound only and never saves or shares your screen. If recording fails, open System Settings › Privacy & Security › Screen & System Audio Recording, turn on AI Transcribe, and restart the app; the app shows these steps with a button that opens the right page. Microphone recording doesn’t need this permission.',
   },
   {
     q: 'What do I need to run it?',
-    a: 'Mac: macOS 12 or later on an Apple Silicon Mac (M1 or newer). iPhone: iOS 16.4 or later.',
+    a: 'Mac: macOS 12 or later on an Apple Silicon Mac (M1 or newer). iPhone and iPad: iOS 18 or later.',
   },
   {
     q: 'How do I report a problem or send feedback?',

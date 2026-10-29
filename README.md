@@ -1,6 +1,6 @@
-# Henrik Transcribe — marketing site
+# AI Transcribe — marketing site
 
-Static landing page for **Henrik Transcribe** (macOS + iPhone), hosted on GitHub Pages.
+Static landing page for **AI Transcribe** (macOS + iPhone), hosted on GitHub Pages.
 Its job is to send visitors to the Mac App Store and the App Store — it does not host the apps.
 
 **Stack:** React 19 · TypeScript · Vite · Tailwind CSS v4 · Motion · Lucide · shadcn/ui-style components
@@ -80,7 +80,7 @@ GitHub Pages only serves static files, so the form itself lives at Tally; the pa
 ## Content rules (keep the site truthful)
 
 - Live microphone transcription is free; file / web-link transcription and the Mac toolkit need a license (Monthly $1.99 · Annual $9.99 · Lifetime $19.99).
-- One purchase covers Mac and iPhone through Apple's Universal Purchase / Apple ID — there is **no** Henrik Transcribe account.
-- iPhone: iPhone only, iOS 16.4+, 30+ languages, WAV files / direct WAV links, no diarization, summaries or batch tools.
+- One purchase covers Mac and iPhone through Apple's Universal Purchase / Apple ID — there is **no** AI Transcribe account.
+- iPhone: iPhone and iPad, iOS 18+, 30+ languages, WAV files / direct WAV links, no diarization, summaries or batch tools.
 - Mac: macOS 12+, Apple Silicon, 99+ languages, full toolkit.
 - Transcripts do not sync between devices.

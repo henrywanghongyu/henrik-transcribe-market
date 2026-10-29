@@ -16,7 +16,7 @@ export function Compare() {
       <Reveal className="mt-14">
         <div className="overflow-x-auto rounded-3xl border border-line bg-surface">
           <table className="w-full min-w-[640px] border-collapse text-left text-[0.95rem]">
-            <caption className="sr-only">Feature comparison between Henrik Transcribe for Mac and for iPhone</caption>
+            <caption className="sr-only">Feature comparison between AI Transcribe for Mac and for iPhone</caption>
             <thead>
               <tr className="border-b border-line text-sm">
                 <th scope="col" className="px-6 py-4 font-medium text-muted">Feature</th>
