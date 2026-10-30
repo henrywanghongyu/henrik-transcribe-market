@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Conference Interpreter</title>
+<meta name="description" content="Follow talks and lectures in your own language, with live captions and spoken interpretation that run on your iPhone or iPad.">
+<style>
+  :root { --bg:#f6f8fb; --fg:#0e1624; --muted:#56637a; --line:#dfe5ee; --accent:#1f7fd1; --card:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0b1220; --fg:#eef3fa; --muted:#a3b1c6; --line:#22304a; --accent:#61b8fa; --card:#121c30; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif; }
+  nav, main, footer { max-width:44rem; margin:0 auto; padding-left:20px; padding-right:20px; }
+  nav { display:flex; gap:20px; align-items:center; padding-top:20px; font-size:.95rem; }
+  nav .brand { font-weight:600; color:var(--fg); text-decoration:none; margin-right:auto; }
+  main { padding-top:40px; padding-bottom:48px; }
+  h1 { font-size:2.1rem; line-height:1.15; margin:0 0 8px; text-wrap:balance; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; }
+  ul { padding-left:1.2rem; } li { margin:6px 0; }
+  a { color:var(--accent); }
+  a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .muted { color:var(--muted); font-size:.95rem; }
+  .summary { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 20px; margin:24px 0; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:14px; margin:28px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 18px; }
+  .card h2 { margin:0 0 4px; font-size:1.02rem; } .card p { margin:0; color:var(--muted); font-size:.95rem; }
+  footer { display:flex; flex-wrap:wrap; gap:16px; padding-bottom:40px; border-top:1px solid var(--line); padding-top:16px; font-size:.9rem; color:var(--muted); }
+</style>
+</head>
+<body>
+<nav aria-label="Site">
+  <a class="brand" href="./">Live Conference Interpreter</a>
+  <a href="./privacy/">Privacy</a>
+  <a href="./support/">Support</a>
+</nav>
+<main>
+  <h1>Follow any talk in your own language.</h1>
+  <p>Live Conference Interpreter listens to a talk, lecture or seminar and shows live translated captions on your iPhone or iPad, with spoken interpretation in your headphones. It runs on your device, even in Airplane Mode.</p>
+  <div class="cards">
+    <div class="card"><h2>Live captions</h2><p>Original, translation or both, in large, readable text.</p></div>
+    <div class="card"><h2>Spoken interpretation</h2><p>Hear the translation through your headphones or AirPods.</p></div>
+    <div class="card"><h2>Automatic language detection</h2><p>It works out the speaker’s language, and follows a switch during a panel or Q&amp;A.</p></div>
+    <div class="card"><h2>Saved sessions</h2><p>Each talk is kept on your device with its transcript, ready to export.</p></div>
+    <div class="card"><h2>Private by design</h2><p>Audio, transcripts and translations never leave your device.</p></div>
+    <div class="card"><h2>Works offline</h2><p>Download your languages before the event, then listen anywhere.</p></div>
+  </div>
+  <p><a href="support/">Support &amp; FAQ</a></p>
+</main>
+<footer>
+  <span>© 2026 Hongyu Wang</span>
+  <a href="./privacy/">Privacy Policy</a>
+  <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a>
+  <a href="./support/">Support</a>
+</footer>
+</body>
+</html>
