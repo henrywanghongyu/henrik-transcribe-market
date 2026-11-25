@@ -19,7 +19,7 @@ const sections: { title: string; body: React.ReactNode }[] = [
           <li><strong>Apple Intelligence</strong> — Apple’s on-device foundation model, built into iOS and macOS on supported devices.</li>
           <li><strong>Qwen</strong> — an open-source model made by Alibaba’s Qwen team. If you choose it, the app downloads the model file once from Hugging Face (huggingface.co) and then runs it locally. Only the model file is downloaded; Hugging Face sees the download request (like any website you visit) but never receives your transcripts.</li>
         </ul>
-        <p>Your transcripts, questions and summaries are not sent to Apple, Alibaba, Hugging Face or any other AI service. The same applies to transcription (Whisper, or Apple’s speech recognizer in on-device-only mode) and to speaker identification.</p>
+        <p>Your transcripts, questions and summaries are not sent to Apple, Alibaba, Hugging Face or any other AI service. The same applies to transcription and to speaker identification. The transcription engines are Whisper, Qwen3-ASR (an open-source speech recognition model made by Alibaba’s Qwen team, downloaded once from Hugging Face if you choose it) and Apple’s speech recognizer in on-device-only mode. All of them run on your device, and your audio is never sent to OpenAI, Alibaba, Apple, Hugging Face or anyone else.</p>
       </>
     ),
   },
@@ -40,6 +40,14 @@ const sections: { title: string; body: React.ReactNode }[] = [
     ),
   },
   {
+    title: 'Email to yourself (optional)',
+    body: (
+      <p>
+        If you add your email address in the app’s settings, a transcript’s Email button opens a new message in your own mail app, addressed to you, with the transcript, its summary and mind map, and the recording attached. You can change the recipient or the message. Nothing is sent until you tap Send, and the message is sent by your own mail account. {site.name} has no mail server and never receives it.
+      </p>
+    ),
+  },
+  {
     title: 'No accounts, no ads, no tracking',
     body: <p>You do not need an account to use {site.name}. The apps contain no advertising and no analytics or tracking of your activity.</p>,
   },
@@ -52,6 +60,7 @@ const sections: { title: string; body: React.ReactNode }[] = [
           <li><strong>Download AI models</strong> — speech-recognition and language models are fetched from public model hosts (Hugging Face) and then run locally.</li>
           <li><strong>Fetch a web link you paste</strong> — the app contacts the site you named to download that media, then transcribes it on your device.</li>
           <li><strong>Verify your subscription or purchase</strong> — handled by Apple’s App Store.</li>
+          <li><strong>Send an email you write</strong> — only when you tap Send in your mail app (see Email to yourself above).</li>
           <li><strong>Sync with Mac</strong>, if you turn it on — your cloud drive’s own app uploads the transcript files to your drive (see above).</li>
         </ul>
         <p>Transcription, speaker diarization and AI analysis never leave your device.</p>
@@ -93,7 +102,7 @@ export function Privacy() {
     <main className="mx-auto w-full max-w-3xl px-5 py-16 sm:px-8 md:py-24">
       <a href={home()} className="text-sm text-muted hover:text-ink">← Back to {site.name}</a>
       <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl">Privacy Policy</h1>
-      <p className="mt-3 text-muted">Last updated October 12, 2026 · Applies to {site.name} for Mac and iPhone</p>
+      <p className="mt-3 text-muted">Last updated November 25, 2026 · Applies to {site.name} for Mac and iPhone</p>
       <div className="mt-12 space-y-10">
         {sections.map((s) => (
           <section key={s.title}>
